@@ -2,7 +2,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-left">
-        
+
         <li><a class="link link--yaku"
                href="{{url('index')}}"><span>A</span><span>C</span><span>A</span><span>S</span><span>Ă</span></a>
         </li>
@@ -247,7 +247,7 @@
                                             <option value="img3">Img3</option>
                                         </optgroup>
                                     </select>
-                                    <input type="text" name="linkOfBanner" placeholder="Linkul dorit" required
+                                    <input type="text" name="link_of_banner" placeholder="Linkul dorit" required
                                            title="Completează te rog câmpul">
                                     <span class="file-input btn btn-primary btn-file">
                 Încarcă imagine&hellip; <input type="file" name="new_banner_name">
