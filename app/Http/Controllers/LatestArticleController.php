@@ -12,7 +12,9 @@ class LatestArticleController extends Controller
     function getLatestArticles(){
         $publication = new \App\Publication();
         $article = new \App\Article();
+        $ad = new \App\Ad();
         return View::make("index", ["articleList" => $article->getLatestArticles(5),
-            "publications" => $publication->selectPublicationArchive()]);
+            "publications" => $publication->selectPublicationArchive(),
+            'adList' => $ad->getAdsList()]);
     }
 }

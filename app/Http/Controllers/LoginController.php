@@ -13,7 +13,10 @@ class LoginController extends Controller
 {
     public function getAdminPage() {
         $p = new \App\Publication();
-        return View::make('admin', array('publicationList' => $p->getPublicationList()));
+        $ad = new \App\Ad();
+        return View::make('admin', array('publicationList' => $p->getPublicationList(),
+            'busyAdList' => $ad->getBusyAdsList(),
+            'freeAdList' => $ad->getFreeAdsList()));
     }
 
     public function login() {
