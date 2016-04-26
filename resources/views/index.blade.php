@@ -42,14 +42,14 @@
                     <li>
                         <div class="banner-info">
                             <h3 class="titleImage">Suntem medici bravo!</h3>
-                            <p>Da chiar suntem</p>
+                            <p class="titleImage">Da chiar suntem</p>
                             <a href="{{url('about')}}" class="effect6">Află mai multe...</a>
                         </div>
                     </li>
                     <li>
                         <div class="banner-info">
                             <h3 class="titleImage">Suntem medici deștepți!</h3>
-                            <p>Fără nici o întrebare...</p>
+                            <p class="titleImage">Fără nici o întrebare...</p>
                             <a href="{{url('about')}}" class="effect6">Află mai multe...</a>
                         </div>
                     </li>

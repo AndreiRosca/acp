@@ -63,6 +63,25 @@
                     </tr>
 
                 </table>
+
+                <ol> <li>Revista medicală ştiinţifico-practică „Arta  Medica” publică editoriale, lucrări originale, referate generale, studii de  cazuri clinice, recenzii de cărţi şi reviste, referate din literatura de  specialitate, corespondenţe (opinii, sugestii, scrisori), informaţii  medicale.</li>
+                    <li> Materialele ce se trimit spre publicare  revistei „Arta Medica” vor include: varianta dactilografiată la două rânduri,  mărimea caracterelor – de 14 puncte, pe o singură faţă a colii de hârtie, în  două exemplare (una din ele cu viza şefului clinicii sau organizaţiei de unde  provine lucrarea); versiunea electronică.</li>
+                    <li> Manuscrisele, împreună cu o cerere de  publicare din partea autorilor, vor fi predate   sau  vor fi adresate  secretariatului  revistei pe adresa MD-2025, Chişinău,  str. N. Testemiţanu 29, Spitalul Clinic  Republican,  et. 12,   tel.: 72-92-47; 20-55-22; 0-7951-4373.</li>
+                    <li> Nu se vor trimite spre publicare articole ce  au apărut ca atare şi în alte publicaţii medicale.</li>
+                    <li> Articolele vor cuprinde în ordine următoarele  elemente:<br>
+                        a.   titlu concis, reflectând conţinutul lucrării;<br>
+                        b.  autorii vor fi trecuţi cu nume şi prenume  complete, titluri profesionale şi științifice, instituţia unde lucrează;<br>
+                        c.   schema lucrării va cuprinde: introducere,  material şi metodă, rezultate, discuţii şi concluzii, bibliografia;<br>
+                        d.  rezumatele vor i atât în limba română cât şi  în limba engleză cu titlul tradus(obligatoriu);<br>
+                        e.  referinţele bibliografice  vor   cuprinde obligatoriu: autorii  (numele  şi iniţiala prenumelui), titlul articolului  citat (în limba originală), revista (cu prescurtarea internaţională), anul  apariţiei, volumul, numărul paginilor.
+                        Ex.:
+                        1.   DEVANEY E. J. – Esophagectomy for achalasia:  patient selection and clinical experience.   Ann Thorac  Surg.  2001; 72(3):854-8 </p>      </li>
+                    <li> Dimensiunile   textelor  (inclusiv bibliografia)  nu vor depăşi 12 pagini pentru un referat general, 10 pagini pentru o cercetare  originală, 5 pagini pentru o prezentare de caz, 1 pagină pentru o recenzie, 1  pagină pentru un rezumat de pe o lucrare străină. Dimensiunea unei figuri sau a  unui tabel va fi de cel mult ½ pagină tip A4, iar numărul tabelelor şi figurilor  din text va fi de cel mult jumătate minus unu din numărul paginilor dactilografiate.</li>
+                    <li> Fotografiile, desenele  vor fi de   o  calitate bună  şi   foarte bună, fiind prezentate   la  redacţie  în original   (sau  scanate  la o   rezoluţie de 300 dpi  în format  TIFF).</li>
+                    <li>Articolele ce nu corespund cerinţelor  menţionate mai sus vor i returnate autorilor pentru modificările necesare.</li>
+                    <li> Pentru   informaţii  suplimentare  contactaţi   secretarul de  redacţie  la telefoanele  (+373 22) 205522,  (+373) 6978 7700  sau prin e-mail  la adresa <span class="стиль1">eduard.bernaz@artamedica.md</span></li>
+                </ol>
+
             </div>
             <div class="clearfix"></div>
         </div>
