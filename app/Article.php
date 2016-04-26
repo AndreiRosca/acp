@@ -50,6 +50,13 @@ class Article extends BaseModel
             'article_file_mime' => $fileMime, 'article_resume' => Input::get('article_resume')));
     }
 
+	public function getArticleFileMime($fileName) {
+		$fileMetaData = DB::table('articles')->select('article_file_mime')->where('article_file_name', '=', $fileName)->get();
+		foreach ($fileMetaData as $f)
+			$fileMime = $f->article_file_mime;
+		return $fileMime;
+	}
+	
     public function getArticle($id) {
         $articles = DB::table('articles')->
         select('english_title', 'romanian_title',

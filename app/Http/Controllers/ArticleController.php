@@ -23,6 +23,7 @@ class ArticleController extends Controller
 
     public function getArticleFile($fileName) {
         $article = new \App\Article();
-        return Response::make($article->getFile($fileName), 200, array('content-type' => 'application/pdf'));
+        return Response::make($article->getFile($fileName), 200, 
+			array('content-type' => $article->getArticleFileMime($fileName)));
     }
 }
