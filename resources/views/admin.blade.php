@@ -238,22 +238,32 @@
                         </div>
                         <div class="modal-body">
                             <div class="contact-form">
-                                <form method="POST" action="{{url("")}}">
+                                <form method="POST" action="{{url("/insert_ad")}}" enctype="multipart/form-data">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <select class="form-control col-md-2" name="empty_banner_id">
-                                        <optgroup label="Alege locul de plasare disponibil">
-                                            <option value="img1">Img1</option>
-                                            <option value="img2">Img2</option>
-                                            <option value="img3">Img3</option>
-                                        </optgroup>
+                                        @if (count($freeAdList) == 0)
+                                            <optgroup label="Nu sunt locuri de plasare disponibile">
+                                            </optgroup>
+                                        @else
+                                            <optgroup label="Alege locul de plasare disponibil">
+                                                @foreach ($freeAdList as $ad)
+                                                    <option value="{{$ad['id']}}">Img{{$ad['id']}}</option>
+                                                @endforeach
+                                            </optgroup>
+                                        @endif
                                     </select>
                                     <input type="text" name="link_of_banner" placeholder="Linkul dorit" required
                                            title="Completează te rog câmpul">
                                     <span class="file-input btn btn-primary btn-file">
                 Încarcă imagine&hellip; <input type="file" name="new_banner_name">
             </span>
-                                    <input type="submit"
-                                           value="Adaugă">
+                                    @if (count($freeAdList) == 0)
+                                        <input type="submit"
+                                           value="Adaugă" disabled="disabled">
+                                    @else
+                                        <input type="submit"
+                                               value="Adaugă">
+                                        @endif
                                 </form>
                             </div>
                         </div>
@@ -274,17 +284,27 @@
                         </div>
                         <div class="modal-body">
                             <div class="contact-form">
-                                <form method="POST" action="{{url("")}}">
+                                <form method="POST" action="{{url("/delete_ad")}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <select class="form-control col-md-2" name="existent_banner_id">
-                                        <optgroup label="Alege banner-ul ce urmează a fi șters">
-                                            <option value="img1">Img1</option>
-                                            <option value="img2">Img2</option>
-                                            <option value="img3">Img3</option>
-                                        </optgroup>
+                                        @if (count($busyAdList) == 0)
+                                            <optgroup label="Nu sunt banere ce pot fi șterse">
+                                            </optgroup>
+                                        @else
+                                            <optgroup label="Alege banner-ul ce urmează a fi șters">
+                                                @foreach ($busyAdList as $ad)
+                                                    <option value="{{$ad['id']}}">Img{{$ad['id']}}</option>
+                                                @endforeach
+                                            </optgroup>
+                                        @endif
                                     </select>
-                                    <input type="submit"
-                                           value="Șterge">
+                                    @if (count($busyAdList) == 0)
+                                        <input type="submit"
+                                           value="Șterge" disabled="disabled">
+                                    @else
+                                        <input type="submit"
+                                               value="Șterge">
+                                    @endif
                                 </form>
                             </div>
                         </div>

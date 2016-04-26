@@ -10,20 +10,26 @@ use Illuminate\Support\Facades\Response;
 
 class ArticleController extends Controller
 {
-    public function getArticles() {
+    public function getArticles()
+    {
         $article = new \App\Article();
-        return View::make("view-publication")->with("articleList", $article->getAllArticles());
+        $ad = new \App\Ad();
+        return View::make("view-publication")->with("articleList", $article->getAllArticles())->with('adList', $ad->getAdsList());
     }
 
-    public function getPublicationArticles($publicationId) {
+    public function getPublicationArticles($publicationId)
+    {
         $article = new \App\Article();
         $publication = new \App\Publication();
-        return View::make("view-publication", array('articleList' => $article->getPublicationArticles($publicationId)));
+        $ad = new \App\Ad();
+        return View::make("view-publication", array('articleList' => $article->getPublicationArticles($publicationId),
+            'adList' => $ad->getAdsList()));
     }
 
-    public function getArticleFile($fileName) {
+    public function getArticleFile($fileName)
+    {
         $article = new \App\Article();
-        return Response::make($article->getFile($fileName), 200, 
-			array('content-type' => $article->getArticleFileMime($fileName)));
+        return Response::make($article->getFile($fileName), 200,
+            array('content-type' => $article->getArticleFileMime($fileName)));
     }
 }

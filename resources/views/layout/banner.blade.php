@@ -16,6 +16,18 @@
                     <div class="nbs-flexisel-container">
                         <div class="nbs-flexisel-inner">
                             <ul id="flexiselDemo1" class="nbs-flexisel-ul" style="left: -285px; display: block;">
+                                @foreach ($adList as $ad)
+                                    <li class="nbs-flexisel-item" style="width: 285px;">
+                                        <div class="project-grids">
+                                            <a href="{{$ad['ad_href']}}" target="_blank">
+                                                <img src="{{url('/getAdImage/' . $ad['ad_image_file_name'])}}" alt="">
+                                            </a>
+                                            <div class="team-bottom">
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+                                <!--
                                 <li class="nbs-flexisel-item" style="width: 285px;">
                                     <div class="project-grids">
                                         <a href="#" target="_blank" name="link_of_banner1">
@@ -106,6 +118,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                -->
                             </ul>
                             <div class="nbs-flexisel-nav-left" style="top: 138px;"></div>
                             <div class="nbs-flexisel-nav-right" style="top: 138px;"></div>
