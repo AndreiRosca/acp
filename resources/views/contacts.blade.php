@@ -38,9 +38,8 @@
         <h3 class="titleBody text-center">Contactează<span>-ne</span></h3>
         <div class="contact-info">
             <div class="col-md-8 contact-grids">
-                <h5>Contactează=ne și fii frumos contactează=ne și fii frumos contactează=ne și fii frumos</h5>
-                <p>contactează=ne și fii frumoscontactează=ne și fii frumoscontactează=ne și fii frumoscontactează=ne și fii
-                    frumoscontactează=ne și fii frumoscontactează=ne și fii frumos </p>
+                <h5 class="titleBody" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Dacă ai ceva întrebări sau ești cointeresat...</h5>
+                <p>Simte-te liber să ne scrii oricând dorești!</p>
                 <div class="contact-form">
                     <h3 class="title1">Scrie-ne aici</h3>
                     <form method="post" action="{{url('/article_request')}}" enctype="multipart/form-data">

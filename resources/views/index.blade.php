@@ -42,14 +42,14 @@
                     <li>
                         <div class="banner-info">
                             <h3 class="titleImage">Suntem medici bravo!</h3>
-                            <p>Da chiar suntem</p>
+                            <p class="titleImage">Da chiar suntem</p>
                             <a href="{{url('about')}}" class="effect6">Află mai multe...</a>
                         </div>
                     </li>
                     <li>
                         <div class="banner-info">
                             <h3 class="titleImage">Suntem medici deștepți!</h3>
-                            <p>Fără nici o întrebare...</p>
+                            <p class="titleImage">Fără nici o întrebare...</p>
                             <a href="{{url('about')}}" class="effect6">Află mai multe...</a>
                         </div>
                     </li>
@@ -121,17 +121,17 @@
         @foreach($articleList as $article)
             <div class="publication">
                 <div class="publication-top">
-                    <h4> {{$article['romanian_title']}}</h4>
+                    <h4><b> {{$article['romanian_title']}}</b></h4>
                 </div>
                 <div class="publication-bottom">
-                    <h5>Autor(i) : {{$article['authors']}} </h5>
-                    <h5>Instituție(i) : {{$article['institution']}} </h5>
+                    <h5><b>Autor(i) : </b>{{$article['authors']}} </h5>
+                    <h5><b>Instituție(i) : </b>{{$article['institution']}} </h5>
                     <div class="icon">
                         <a href="{{url('/getArticle/')}}/{{$article['article_file_name']}}"
                            target="_blank" class="glyphicon glyphicon-print" aria-hidden="true">
                         </a>
                     </div>
-                    <h5>Descriere : <br></h5>
+                    <h5><b>Descriere : </b><br></h5>
                     <p>{{$article['romanian_description']}}</p>
                 </div>
             </div>
@@ -141,100 +141,8 @@
 <div class="clearfix"></div>
 </div>
 
-<div class="general">
-    <div class="projects">
-        <div class="container">
-            <div class="col-md-3 project-right ">
-                <h3 class="title">Partenerii <span> Noștri</span></h3>
-                <p>Ei sunt mereu alături de noi.
-                    Ei sunt mereu alături de noi .
-                    Ei sunt mereu alături de noi .
-                    Ei sunt mereu alături
-                </p>
-            </div>
-            <div class="col-md-9 project-left">
-                <!-- flex-slider -->
-                <div class="work-bottom">
-                    <div class="nbs-flexisel-container">
-                        <div class="nbs-flexisel-inner">
-                            <ul id="flexiselDemo1" class="nbs-flexisel-ul" style="left: -285px; display: block;">
-                                <li class="nbs-flexisel-item" style="width: 285px;">
-                                    <div class="project-grids">
-                                        <a href="http://www.felicia.md/" target="_blank">
-                                            <img src="{{asset('images/img1.jpg')}}" alt="">
-                                        </a>
-                                        <div class="team-bottom">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nbs-flexisel-item" style="width: 285px;">
-                                    <div class="project-grids">
-                                        <a href="http://www.felicia.md/" target="_blank">
-                                            <img src="{{asset('images/img2.jpg')}}" alt="">
-                                        </a>
-                                        <div class="team-bottom">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nbs-flexisel-item" style="width: 285px;">
-                                    <div class="project-grids">
-                                        <a href="http://farmaciafamiliei.md/" target="_blank">
-                                            <img src="{{asset('images/img3.jpg')}}" alt="">
-                                        </a>
-                                        <div class="team-bottom">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nbs-flexisel-item" style="width: 285px;">
-                                    <div class="project-grids">
-                                        <a href="http://farmaciafamiliei.md/" target="_blank">
-                                            <img src="{{asset('images/img4.jpg')}}" alt="">
-                                        </a>
-                                        <div class="team-bottom">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="nbs-flexisel-nav-left" style="top: 138px;"></div>
-                            <div class="nbs-flexisel-nav-right" style="top: 138px;"></div>
-                        </div>
-                    </div>
-                    <script type="text/javascript">
-                        $(window).load(function () {
-                            $("#flexiselDemo1").flexisel({
-                                visibleItems: 4
-                                , animationSpeed: 1000
-                                , autoPlay: true
-                                , autoPlaySpeed: 3000
-                                , pauseOnHover: true
-                                , enableResponsiveBreakpoints: true
-                                , responsiveBreakpoints: {
-                                    portrait: {
-                                        changePoint: 480
-                                        , visibleItems: 2
-                                    }
-                                    , landscape: {
-                                        changePoint: 640
-                                        , visibleItems: 3
-                                    }
-                                    , tablet: {
-                                        changePoint: 768
-                                        , visibleItems: 3
-                                    }
-                                }
-                            });
 
-                        });
-                    </script>
-                    <script type="text/javascript" src="{{asset('js/jquery.flexisel.js')}}"></script>
-                    <!-- //flex-slider -->
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
-
+@include('layout.banner')
 @include('layout.footer')
 @include('layout.copyright')
 </body>

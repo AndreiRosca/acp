@@ -524,6 +524,11 @@ h3.titleImage span {
     text-shadow: 2px 2px 8px #000000;
 }
 
+p.titleImage {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 8px #000000;
+}
+
 p span {
     color: #18c9d2;
 }
