@@ -252,7 +252,7 @@
                                             </optgroup>
                                         @endif
                                     </select>
-                                    <input type="text" name="link_of_banner" placeholder="Linkul dorit" required
+                                    <input type="text" name="link_of_banner" placeholder="Linkul, exemplu: http://www.google.md" required
                                            title="Completează te rog câmpul">
                                     <span class="file-input btn btn-primary btn-file">
                 Încarcă imagine&hellip; <input type="file" name="new_banner_name">
