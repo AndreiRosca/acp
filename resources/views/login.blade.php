@@ -17,9 +17,8 @@
         </li>
         <li><a href="{{url('contacts')}}"
                class="link link--yaku"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span><span>E</span></a>
-        </li>
-        <li class="active"><a href="#"><span>A</span><span>D</span><span>M</span><span>I</span><span>N</span></a>
-        </li>
+       <li>
+	   </li>
     </ul>
     <div class="clearfix"></div>
 </div>
